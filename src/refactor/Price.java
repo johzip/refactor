@@ -1,3 +1,4 @@
+package refactor;
 /**
  * Created with IntelliJ IDEA.
  * User: Berkling
