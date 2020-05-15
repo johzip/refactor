@@ -16,8 +16,18 @@ public class Customer_test {
 	}
 	
 	@Test
-	public void test() {
+	public void getNAme() {
 		assertTrue(testCustomer.getName().equals(testName));		
-	}
+	} 
+	
+	@Test
+	public void statement() {
+		String statement = "Rental Record for " + testName + "testName" + "\n";
+		statement += "\t" + "Title" + "\t" + "\t" + "Days" + "\t" + "Amount" + "\n";
+		statement += "Amount owed is " + "0.0" + "\n";
+        statement += "You earned " + "0" + " frequent renter points";
 
+		assertEquals(statement, testCustomer.statement());
+	}
+	
 }
