@@ -27,8 +27,8 @@ public class Customer {
             //determine amounts for each line            
             frequentRenterPoints += each.getFrequentRenterPoints();
             //show figures for this rental
-            result += "\t" + each.getMovie().getTitle()+ "\t" + "\t" + each.getDaysRented() + "\t" + String.valueOf(each.getCharge()) + "\n";
-            totalAmount += each.getCharge();
+            result += "\t" + each.getMovie().getTitle()+ "\t" + "\t" + each.getDaysRented() + "\t" + String.valueOf(each.getMovie().getCharge(each.getDaysRented())) + "\n";
+            totalAmount += each.getMovie().getCharge(each.getDaysRented());
         }
         //add footer lines
         result += "Amount owed is " + String.valueOf(totalAmount) + "\n";

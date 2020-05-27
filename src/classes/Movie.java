@@ -30,5 +30,11 @@ public class Movie {
     }
     public String getTitle (){
         return title;
-    };
+    }
+	/**
+	 * @deprecated Use {@link classes.Price#getCharge(classes.Movie,int)} instead
+	 */
+	public double getCharge(int daysRented) {
+		return price.getCharge(this, daysRented);
+	}
 }
