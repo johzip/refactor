@@ -1,4 +1,4 @@
-package refactor;
+package refactor.classes;
 import java.lang.*;
 import java.util.*;
 /**
