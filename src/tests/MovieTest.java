@@ -8,11 +8,12 @@ import classes.*;
 
 public class MovieTest {
 
+	private String filmName = "Der FilmFilm";
 	private Movie movie;
 	
 	@Before
 	public void setUp() {
-		movie = new Movie("Toller Film", 13);
+		movie = new Movie(filmName, 1);
 	}
 	
 	@Test
@@ -22,7 +23,7 @@ public class MovieTest {
 	
 	@Test
 	public void getTitle() {
-		assertEquals("Toller Film", movie.getTitle());
+		assertEquals(filmName, movie.getTitle());
 	}
 }
 

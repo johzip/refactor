@@ -13,7 +13,7 @@ public class RentalTest {
 	
 	@Before
 	public void setUp() {
-		movie = new Movie("Toller Film", 0);
+		movie = new Movie("der Film", 0);
 		rental = new Rental(movie, 76);
 	}
 
