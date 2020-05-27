@@ -35,6 +35,12 @@ public class Movie {
 	 * @deprecated Use {@link classes.Price#getCharge(classes.Movie,int)} instead
 	 */
 	public double getCharge(int daysRented) {
-		return price.getCharge(this, daysRented);
+		return price.getCharge(daysRented);
+	}
+	
+	public int getFrequentRenterPoints( int daysRented) {
+		if ((getPriceCode() == Movie.NEW_RELEASE) && daysRented > 1) 
+		    return 2;
+		return 1;
 	}
 }
