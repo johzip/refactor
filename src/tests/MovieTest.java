@@ -1,9 +1,9 @@
-package refactor.tests;
+package tests;
 
 import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
-import refactor.classes.*;
+import classes.*;
 
 
 public class MovieTest {
@@ -12,12 +12,12 @@ public class MovieTest {
 	
 	@Before
 	public void setUp() {
-		movie = new Movie("Toller Film", 0);
+		movie = new Movie("Toller Film", 13);
 	}
 	
 	@Test
 	public void getPriceCode() {
-		assertEquals(0, movie.getPriceCode());
+		assertEquals(13, movie.getPriceCode());
 	}
 	
 	@Test

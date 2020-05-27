@@ -1,4 +1,4 @@
-package refactor.classes;
+package classes;
 public class Rental {
     private Movie movie;
     private int daysRented;
@@ -11,11 +11,5 @@ public class Rental {
     }
     public Movie getMovie() {
         return movie;
-    }
-    double getCharge() {
-    	return movie.getCharge(daysRented);
-    }
-    public int getFrequentRenterPoints(){
-    	return movie.getFrequentRenterPoints(daysRented);
     }
 }

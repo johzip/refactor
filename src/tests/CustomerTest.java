@@ -1,9 +1,9 @@
-package refactor.tests;
+package tests;
 
 import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
-import refactor.classes.*;
+import classes.*;
 
 
 public class CustomerTest {
